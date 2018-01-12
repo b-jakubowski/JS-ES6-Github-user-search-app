@@ -23,16 +23,20 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<form onSubmit={event => this.onSubmit(event)}>
-					<label htmlFor="searchText">Search by user name</label>
-					<input
-						type="text"
-						id="searchText"
-						onChange={event => this.onChangeHandle(event)}
-						value={this.state.searchText}
-					/>
-				</form>
-				<UsersList users={this.state.users} />
+				<div className="container">
+					<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="girhub logo" />
+					<form onSubmit={event => this.onSubmit(event)}>
+						
+						<input
+							type="text"
+							id="searchText"
+							placeholder="Search by user name"
+							onChange={event => this.onChangeHandle(event)}
+							value={this.state.searchText}
+						/>
+					</form>
+					<UsersList users={this.state.users} />
+				</div>
 			</div>
 		);
 	}
