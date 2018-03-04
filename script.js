@@ -1,3 +1,4 @@
+
 class App extends React.Component {
 	constructor() {
 		super();
@@ -26,7 +27,6 @@ class App extends React.Component {
 				<div className="container">
 					<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="girhub logo" />
 					<form onSubmit={event => this.onSubmit(event)}>
-						
 						<input
 							type="text"
 							id="searchText"
@@ -54,8 +54,9 @@ class UsersList extends React.Component {
 
 class User extends React.Component {
 	render() {
+		// import style from './styles.css';
 		return (
-			<div>
+			<div className="userElement">
 				<img src={this.props.user.avatar_url} style={{ maxWidth: "100px" }} />
 				<a href={this.props.user.html_url} target="_blank">
 					{this.props.user.login}
