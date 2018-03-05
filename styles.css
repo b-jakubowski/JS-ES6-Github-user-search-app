@@ -29,6 +29,7 @@ input:focus {
 .userElement {
 	border: 2px solid rgba(0, 0, 0, 0.1);
 	height: 100px;
+	margin-top: 20px;
 }
 
 .userElement img {
@@ -42,7 +43,7 @@ input:focus {
 	font-size: 24px;
 	margin-top: 20px;
 	padding: 10px;
-	border: none !important;
+	text-decoration: none;
 }
 
 .userElement a:hover {
